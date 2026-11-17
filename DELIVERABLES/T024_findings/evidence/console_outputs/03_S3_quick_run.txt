@@ -1,0 +1,18 @@
+D:\PROJECT_v032\PROJECT\CODE>run_crackle_matrix.bat --quick --scenarios S3 --yes --out captures\matrix_S3
+Crackle matrix: 6 configurations x 1 scenarios x 20 s = 6 runs, about 2 min 18 s.
+
+=== S3: tone loopback ===
+Cable from the output to the input, Windows volume LOW.
+[S3 1/6] Windows WASAPI exclusive 48000 Hz / 128
+   -> ok clicks/min 8796.0
+[S3 2/6] Windows WASAPI exclusive 48000 Hz / 256
+   -> ok clicks/min 5278.478492
+[S3 3/6] Windows WASAPI shared 48000 Hz / 128
+   -> ok clicks/min 8.964143
+[S3 4/6] Windows WASAPI shared 48000 Hz / 256
+   -> ok clicks/min 8.968908
+[S3 5/6] MME shared 48000 Hz / 128
+   -> ok clicks/min 2.992021
+[S3 6/6] MME shared 48000 Hz / 256
+   -> ok clicks/min 2.992021
+Summary: captures\matrix_S3\matrix_summary.md and .csv

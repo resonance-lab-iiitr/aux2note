@@ -1,0 +1,9 @@
+PREVIEW ONLY (the official verdict is made by the analysis session from the card's rule).
+
+shared  runs with 6/6 bursts, status OK, 0 xruns, within-run range <= 3.0 ms: yes | peak in -30..-3 dBFS: yes | spread of run medians: 0.188 ms | unplugged heard nothing: yes
+        median of run medians 40.786 ms (min 40.744, max 40.932), worst within-run range 0.0 ms
+mme     runs with 6/6 bursts, status OK, 0 xruns, within-run range <= 3.0 ms: yes | peak in -30..-3 dBFS: yes | spread of run medians: 0.333 ms | unplugged heard nothing: yes
+        median of run medians 127.473 ms (min 127.286, max 127.619), worst within-run range 0.0 ms
+
+spread rule (1.0 ms or less on at least one path, 3.0 ms or less on both): yes
+all other conditions met: yes

@@ -1,0 +1,13 @@
+run_id,path,phase,run_index,timestamp,status,expected_bursts,detected,median_ms,min_ms,max_ms,jitter_range_ms,jitter_std_ms,xruns,peak_dbfs,noise_dbfs,reported_ms,gap_ms,cb_avg_ms,cb_max_ms,cpu_load,in_name,out_name,error
+shared_plugged_1,shared,plugged,1,2026-11-14T15:34:15,OK,6,6,40.7441,40.7441,40.7441,0.0,0.0,0,-15.6124,-84.3577,49.3333,-8.5892,0.0186,0.0604,0.0047,Line In (High Definition Audio Device),Speakers (High Definition Audio Device),
+shared_plugged_2,shared,plugged,2,2026-11-14T15:34:21,OK,6,6,40.9316,40.9316,40.9316,0.0,0.0,0,-15.6109,-85.4226,49.3333,-8.4017,0.0166,0.069,0.0044,Line In (High Definition Audio Device),Speakers (High Definition Audio Device),
+shared_plugged_3,shared,plugged,3,2026-11-14T15:34:28,OK,6,6,40.7858,40.7858,40.7858,0.0,0.0,0,-15.6146,-84.5525,49.3333,-8.5476,0.0165,0.0593,0.0042,Line In (High Definition Audio Device),Speakers (High Definition Audio Device),
+shared_plugged_4,shared,plugged,4,2026-11-14T15:34:35,OK,6,6,40.8899,40.8899,40.8899,0.0,0.0,0,-15.6085,-83.6362,49.3333,-8.4434,0.0167,0.0594,0.0044,Line In (High Definition Audio Device),Speakers (High Definition Audio Device),
+shared_plugged_5,shared,plugged,5,2026-11-14T15:34:41,OK,6,6,40.7858,40.7858,40.7858,0.0,0.0,0,-15.6154,-83.9209,49.3333,-8.5476,0.0224,0.0903,0.0088,Line In (High Definition Audio Device),Speakers (High Definition Audio Device),
+mme_plugged_1,mme,plugged,1,2026-11-14T15:34:48,OK,6,6,127.6191,127.6191,127.6191,0.0,0.0,0,-15.6146,-85.445,112.0,15.6191,0.0162,0.0756,0.0036,Line In (High Definition Audio ,Speakers (High Definition Audio,
+mme_plugged_2,mme,plugged,2,2026-11-14T15:34:55,OK,6,6,127.4733,127.4733,127.4733,0.0,0.0,0,-15.6146,-82.4039,112.0,15.4733,0.0133,0.0582,0.0036,Line In (High Definition Audio ,Speakers (High Definition Audio,
+mme_plugged_3,mme,plugged,3,2026-11-14T15:35:01,OK,6,6,127.4941,127.4941,127.4941,0.0,0.0,0,-15.6082,-79.3737,112.0,15.4941,0.0125,0.0433,0.0034,Line In (High Definition Audio ,Speakers (High Definition Audio,
+mme_plugged_4,mme,plugged,4,2026-11-14T15:35:08,OK,6,6,127.4733,127.4733,127.4733,0.0,0.0,0,-15.613,-80.7764,112.0,15.4733,0.0129,0.0734,0.0037,Line In (High Definition Audio ,Speakers (High Definition Audio,
+mme_plugged_5,mme,plugged,5,2026-11-14T15:35:15,OK,6,6,127.2858,127.2858,127.2858,0.0,0.0,0,-15.6082,-82.1788,112.0,15.2858,0.0126,0.0767,0.0035,Line In (High Definition Audio ,Speakers (High Definition Audio,
+shared_unplugged_1,shared,unplugged,1,2026-11-14T15:35:39,FAILED,6,0,,,,,,,,,,,,,,,,child process produced no result
+mme_unplugged_1,mme,unplugged,1,2026-11-14T15:35:39,FAILED,6,0,,,,,,,,,,,,,,,,child process produced no result

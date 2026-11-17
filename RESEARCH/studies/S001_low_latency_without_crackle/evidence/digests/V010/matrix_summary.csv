@@ -1,0 +1,7 @@
+scenario,api,mode,rate,block,seconds,status,clicks_per_min,dropouts,clipping,xruns,cb_ms_p99,verdict,folder
+S3,Windows WASAPI,exclusive,48000,128,20,ok,8796.0,0,0,0,0.147,hardware_or_driver_input (medium),S3_wasapi-excl_48000_128
+S3,Windows WASAPI,exclusive,48000,256,20,ok,5278.478492,0,0,0,0.15,hardware_or_driver_input (high),S3_wasapi-excl_48000_256
+S3,Windows WASAPI,shared,48000,128,20,ok,8.964143,0,0,0,0.155,hardware_or_driver_input (medium),S3_wasapi-shared_48000_128
+S3,Windows WASAPI,shared,48000,256,20,ok,8.968908,0,0,0,0.169,hardware_or_driver_input (medium),S3_wasapi-shared_48000_256
+S3,MME,shared,48000,128,20,ok,2.992021,0,0,0,0.148,electrical (medium),S3_mme_48000_128
+S3,MME,shared,48000,256,20,ok,2.992021,1,0,0,0.156,electrical (medium),S3_mme_48000_256

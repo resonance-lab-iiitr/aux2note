@@ -1,0 +1,224 @@
+{
+ "version": 1,
+ "tool": "crackle_report",
+ "input": {
+  "name": "S3_wasapi-shared_48000_256",
+  "kind": "folder",
+  "sr": 48000,
+  "channels": 1,
+  "channel": 0,
+  "n_samples": 963328,
+  "duration_s": 20.069333,
+  "block_size": 256,
+  "has_blocks": true,
+  "has_meta": true,
+  "ms_frame_samples": 48
+ },
+ "meta": {
+  "format": "live-looper-capture-1",
+  "created_unix": 1794473802.781761,
+  "sample_rate": 48000,
+  "block_size": 256,
+  "channels_in": 1,
+  "channels_out": 2,
+  "capture_output": true,
+  "frames": 963328,
+  "seconds": 20.069333,
+  "blocks": 3763,
+  "full": false,
+  "status_blocks": 0,
+  "raw_note": "raw.wav is the exact sound card input before CLEAN INPUT and effects.",
+  "status_bits": {
+   "1": "input underflow",
+   "2": "input overflow",
+   "4": "output underflow",
+   "8": "output overflow"
+  },
+  "scenario": "S3",
+  "scenario_title": "tone loopback",
+  "effects_off": true,
+  "monitoring_off": true,
+  "silent_input": false,
+  "engine_mode": "SHARED 48000 Hz / 256",
+  "api": "Windows WASAPI",
+  "matrix": true,
+  "source": "raw"
+ },
+ "verdict": {
+  "top": "hardware_or_driver_input",
+  "confidence": "medium",
+  "hypotheses": [
+   {
+    "name": "hardware_or_driver_input",
+    "confidence": "medium",
+    "score": 3,
+    "evidence": [
+     "3 click(s), 9.0 per minute, at random positions inside the block (no fixed offset).",
+     "The capture was made with nothing playing / effects and monitoring off, so the clicks were not produced by the program's own sound.",
+     "The clicks are present in the raw sound-card capture, before any DSP."
+    ],
+    "next_test": "Record 60 s of the RAW input with effects and monitoring off and nothing playing, then repeat with another USB port / cable and in another driver (WASAPI exclusive, ASIO). Clicks at the same rate in every engine mode point at the interface or its driver."
+   },
+   {
+    "name": "electrical",
+    "confidence": "medium",
+    "score": 3,
+    "evidence": [
+     "50 Hz hum with 4 distinct harmonic(s), strongest -88.6 dBFS."
+    ],
+    "next_test": "Run the interface from a different USB port or a powered hub, unplug other devices (laptop charger, monitors), use balanced cables, and record 30 s of silence again. Note whether the hum level or the DC offset changes."
+   }
+  ],
+  "notes": [
+   "0 late block(s), 0 with PortAudio status flags, 2 ADC-time gap(s) in 3763 blocks."
+  ],
+  "summary": "Most likely: hardware_or_driver_input (confidence medium). 3 click(s), 9.0 per minute, at random positions inside the block (no fixed offset).",
+  "disclaimer": "Judged from numbers (samples, spectra, timing), not from listening. These are hypotheses, not proof."
+ },
+ "counts": {
+  "clicks": 3,
+  "clicks_per_min": 8.968908,
+  "dropouts": 0,
+  "clip_runs": 0,
+  "events_total": 3
+ },
+ "dc_noise": {
+  "dc": -1e-06,
+  "dc_dbfs": -125.485136,
+  "rms_dbfs": -20.957659,
+  "peak_dbfs": -17.898877,
+  "noise_floor_dbfs": -21.03942,
+  "digital_silence_fraction": 0.0,
+  "frames_used": 101,
+  "quiet_parts": false
+ },
+ "hum": {
+  "peaks": [
+   {
+    "freq": 50.0,
+    "base": 50,
+    "harmonic": 1,
+    "level_dbfs": -98.911629,
+    "prominence_db": 19.656137
+   },
+   {
+    "freq": 150.0,
+    "base": 50,
+    "harmonic": 3,
+    "level_dbfs": -88.648245,
+    "prominence_db": 34.831972
+   },
+   {
+    "freq": 249.5,
+    "base": 50,
+    "harmonic": 5,
+    "level_dbfs": -95.404286,
+    "prominence_db": 29.870479
+   },
+   {
+    "freq": 349.5,
+    "base": 50,
+    "harmonic": 7,
+    "level_dbfs": -111.228934,
+    "prominence_db": 14.604979
+   }
+  ],
+  "mains_hz": 50,
+  "n_distinct": 4,
+  "strongest_dbfs": -88.648245
+ },
+ "clipping": {
+  "n_samples": 0,
+  "fraction": 0.0,
+  "peak": 0.127367,
+  "n_runs": 0,
+  "max_run": 0
+ },
+ "alignment": {
+  "n": 3,
+  "block_size": 256,
+  "R": 0.840881,
+  "p_value": 0.116756,
+  "preferred_offset": 243.067446,
+  "fraction_within_tol": 0.333333,
+  "tol": 8,
+  "clustered": false,
+  "at_block_start": false
+ },
+ "blocks": {
+  "n_blocks": 3763,
+  "n_late": 0,
+  "n_status": 0,
+  "n_gap": 2,
+  "n_events": 3,
+  "near_late": 0,
+  "near_status": 0,
+  "near_gap": 0,
+  "near_any": 0,
+  "fraction_near_any": 0.0,
+  "chance_fraction": 0.001594,
+  "p_value": 1.0,
+  "linked": false
+ },
+ "compare": null,
+ "worst_events": [
+  {
+   "type": "click",
+   "start_sample": 4109,
+   "t_ms": 85.604167,
+   "amplitude": 0.14768,
+   "width_samples": 12,
+   "hf_db": -43.670837,
+   "block_index": 16,
+   "offset_in_block": 13,
+   "nearest_engine_event_ms": 6410.396,
+   "confidence": "high"
+  },
+  {
+   "type": "click",
+   "start_sample": 1492,
+   "t_ms": 31.083333,
+   "amplitude": 0.036723,
+   "width_samples": 7,
+   "hf_db": -62.457935,
+   "block_index": 5,
+   "offset_in_block": 212,
+   "nearest_engine_event_ms": 6464.917,
+   "confidence": "high"
+  },
+  {
+   "type": "click",
+   "start_sample": 4599,
+   "t_ms": 95.8125,
+   "amplitude": 0.117436,
+   "width_samples": 13,
+   "hf_db": -43.737122,
+   "block_index": 17,
+   "offset_in_block": 247,
+   "nearest_engine_event_ms": 6400.188,
+   "confidence": "high"
+  }
+ ],
+ "band_edges_hz": [
+  0.0,
+  500.0,
+  1000.0,
+  2000.0,
+  4000.0,
+  8000.0,
+  12000.0,
+  16000.0,
+  null
+ ],
+ "pack": {
+  "max_mb": 20.0,
+  "ms_every": 1,
+  "ms_rows": 20069,
+  "excerpts_kept": 3,
+  "png": "skipped",
+  "over_limit": false
+ },
+ "notes": [
+  "Pictures: skipped (--no-png)."
+ ]
+}

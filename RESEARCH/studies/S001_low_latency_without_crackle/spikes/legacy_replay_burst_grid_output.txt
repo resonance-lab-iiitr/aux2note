@@ -1,0 +1,5 @@
+/home/claude/stage/S3_wasapi-excl_48000_128 {"err_db": -8.8, "bursts": 3881, "n_s": 19.0, "gap_ms": {"mean": 4.9, "median": 1.0, "p10": 1.0, "p90": 12.0}, "R_by_period_samples": {"144": 0.408, "96": 0.005, "192": 0.012, "128": 0.046, "256": 0.014, "480": 0.006}, "share_gaps_multiple_of_3ms": 0.39, "R_random_expected": 0.016}
+/home/claude/stage/S3_wasapi-excl_48000_256 {"err_db": -5.2, "bursts": 1, "n_s": 19.09}
+/home/claude/e/CrackleLab_Evidence_and_Report_v2_2026-11-12/evidence/session2_lab_captures/20261112_144217_excl128 {"err_db": -60.7, "bursts": 0}
+/home/claude/e/CrackleLab_Evidence_and_Report_v2_2026-11-12/evidence/session2_lab_captures/20261112_144415_excl256 {"err_db": -10.2, "bursts": 1382, "n_s": 19.0, "gap_ms": {"mean": 13.7, "median": 9.0, "p10": 3.0, "p90": 27.0}, "R_by_period_samples": {"144": 1.0, "96": 0.025, "192": 0.037, "128": 0.015, "256": 0.059, "480": 0.021}, "share_gaps_multiple_of_3ms": 1.0, "R_random_expected": 0.027}
+/home/claude/e/CrackleLab_Evidence_and_Report_v2_2026-11-12/evidence/session2_lab_captures/20261112_144533_shared256 {"err_db": -61.5, "bursts": 0}

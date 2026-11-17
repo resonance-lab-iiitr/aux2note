@@ -1,0 +1,10 @@
+Microsoft Windows [Version 10.0.19041.1]
+(c) 2019 Microsoft Corporation. All rights reserved.
+
+D:\PROJECT_v032\PROJECT\CODE>run python main.py
+'run' is not recognized as an internal or external command,
+operable program or batch file.
+
+D:\PROJECT_v032\PROJECT\CODE>python main.py
+D:\PROJECT_v032\PROJECT\CODE\crackle_report.py:463: UserWarning: No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
+  ax.legend(loc="upper right", fontsize=8)

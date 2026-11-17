@@ -1,0 +1,12 @@
+== 20261112_144217_excl128 WASAPI EXCLUSIVE 48000 Hz / 128
+  raw.wav ch0 {"peak": 0.127, "tone_amp": 0.1268, "err_db": -60.7, "bursts": 0, "bursts_per_s": 0.0, "max_resid": 0.0, "median_width": 0, "median_gap_ms": 0}
+  output.wav ch0 {"peak": 0.3, "tone_amp": 0.3, "err_db": -152.5, "bursts": 0, "bursts_per_s": 0.0, "max_resid": 0.0, "median_width": 0, "median_gap_ms": 0}
+  output.wav ch1 {"peak": 0.3, "tone_amp": 0.3, "err_db": -152.5, "bursts": 0, "bursts_per_s": 0.0, "max_resid": 0.0, "median_width": 0, "median_gap_ms": 0}
+== 20261112_144415_excl256 WASAPI EXCLUSIVE 48000 Hz / 256
+  raw.wav ch0 {"peak": 0.1716, "tone_amp": 0.1217, "err_db": -10.2, "bursts": 1382, "bursts_per_s": 72.7, "max_resid": 0.271, "median_width": 19.0, "median_gap_ms": 9.0}
+  output.wav ch0 {"peak": 0.3, "tone_amp": 0.3, "err_db": -152.5, "bursts": 0, "bursts_per_s": 0.0, "max_resid": 0.0, "median_width": 0, "median_gap_ms": 0}
+  output.wav ch1 {"peak": 0.3, "tone_amp": 0.3, "err_db": -152.5, "bursts": 0, "bursts_per_s": 0.0, "max_resid": 0.0, "median_width": 0, "median_gap_ms": 0}
+== 20261112_144533_shared256 SHARED 48000 Hz / 256
+  raw.wav ch0 {"peak": 0.1269, "tone_amp": 0.1268, "err_db": -61.5, "bursts": 0, "bursts_per_s": 0.0, "max_resid": 0.0, "median_width": 0, "median_gap_ms": 0}
+  output.wav ch0 {"peak": 0.3, "tone_amp": 0.3, "err_db": -152.5, "bursts": 0, "bursts_per_s": 0.0, "max_resid": 0.0, "median_width": 0, "median_gap_ms": 0}
+  output.wav ch1 {"peak": 0.3, "tone_amp": 0.3, "err_db": -152.5, "bursts": 0, "bursts_per_s": 0.0, "max_resid": 0.0, "median_width": 0, "median_gap_ms": 0}

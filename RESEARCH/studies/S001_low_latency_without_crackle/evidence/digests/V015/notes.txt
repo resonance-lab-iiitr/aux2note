@@ -1,0 +1,13 @@
+Notes for E006 (2026-11-14). Automatic facts first, then your answers.
+auto: latency_lab_sha256 = 830dd2204c95
+auto: script_version = 1
+auto: level_check_peak_dbfs = -15.6
+windows_volume_percent: 50
+realtek_driver: High Defination Audio Device
+device_formats: 24 bit 48000 Hz
+exclusive_options: ticked
+enhancements: off
+listen_to_device: off
+power_plan: high
+other_programs: none
+heard_or_printed: no

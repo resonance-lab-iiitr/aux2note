@@ -1,0 +1,33 @@
+{
+  "format": "live-looper-capture-1",
+  "created_unix": 1794474933.834413,
+  "sample_rate": 48000,
+  "block_size": 256,
+  "channels_in": 1,
+  "channels_out": 2,
+  "capture_output": true,
+  "frames": 960000,
+  "seconds": 20.0,
+  "blocks": 3750,
+  "full": true,
+  "status_blocks": 0,
+  "raw_note": "raw.wav is the exact sound card input before CLEAN INPUT and effects.",
+  "status_bits": {
+    "1": "input underflow",
+    "2": "input overflow",
+    "4": "output underflow",
+    "8": "output overflow"
+  },
+  "label": "shared256",
+  "test_type": "tone_cable",
+  "test_type_name": "Test tone (cable out -> in)",
+  "source": "raw",
+  "effects_off": true,
+  "monitoring_off": true,
+  "silent_input": false,
+  "engine_mode": "SHARED 48000 Hz / 256",
+  "requested_seconds": 20,
+  "app": "Live Looper Pro",
+  "tone_hz": 1000.0,
+  "tone_level": 0.3
+}

@@ -1,0 +1,4 @@
+type,start_sample,t_ms,amplitude,width_samples,hf_db,block_index,offset_in_block,nearest_engine_event_ms,confidence
+click,1361,28.354,0.0405938,8,-62.5547,10,81,120.979,high
+click,3155,65.729,0.0802825,7,-42.6343,24,83,83.604,high
+click,3636,75.750,0.144645,10,-42.8671,28,52,73.583,high

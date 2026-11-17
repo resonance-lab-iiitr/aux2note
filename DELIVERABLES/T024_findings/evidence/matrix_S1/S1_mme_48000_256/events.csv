@@ -1,0 +1,10 @@
+type,start_sample,t_ms,amplitude,width_samples,hf_db,block_index,offset_in_block,nearest_engine_event_ms,confidence
+click,85,1.771,3.05176e-05,3,-99.6417,0,85,,low
+click,875,18.229,3.05176e-05,1,-102.61,3,107,,low
+click,4923,102.562,3.05176e-05,3,-99.2031,19,59,,low
+click,4944,103.000,3.05176e-05,2,-99.223,19,80,,low
+click,4971,103.562,3.05176e-05,1,-102.61,19,107,,low
+click,4993,104.021,4.57764e-05,3,-100.8,19,129,,low
+click,5011,104.396,3.05176e-05,25,-99.4343,19,147,,low
+click,5067,105.562,3.05176e-05,13,-99.5997,19,203,,low
+dropout_repeat,715589,14908.104,0.00012207,9,,2795,69,,high

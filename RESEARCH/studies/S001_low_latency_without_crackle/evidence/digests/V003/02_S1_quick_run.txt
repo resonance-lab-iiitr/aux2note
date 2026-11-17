@@ -1,0 +1,18 @@
+D:\PROJECT_v032\PROJECT\CODE>run_crackle_matrix.bat --quick --scenarios S1 --yes --out captures\matrix_S1
+Crackle matrix: 6 configurations x 1 scenarios x 20 s = 6 runs, about 2 min 18 s.
+
+=== S1: silence ===
+Unplug everything from the input (or cover the mic). Stay quiet.
+[S1 1/6] Windows WASAPI exclusive 48000 Hz / 128
+   -> open_failed No audio mode could be opened. Last error: PortAudioError: Error opening Stream: Invalid sample rate [PaErrorCode -9997]. Close other programs that use the sound card (browsers, Teams, music players),
+[S1 2/6] Windows WASAPI exclusive 48000 Hz / 256
+   -> open_failed (same error, -9997 Invalid sample rate)
+[S1 3/6] Windows WASAPI shared 48000 Hz / 128
+   -> open_failed (same error, -9997 Invalid sample rate)
+[S1 4/6] Windows WASAPI shared 48000 Hz / 256
+   -> open_failed (same error, -9997 Invalid sample rate)
+[S1 5/6] MME shared 48000 Hz / 128
+   -> ok clicks/min 24.489796
+[S1 6/6] MME shared 48000 Hz / 256
+   -> ok clicks/min 24.489796
+Summary: captures\matrix_S1\matrix_summary.md and .csv

@@ -1,0 +1,10 @@
+Example: 30 s sine, 16 clicks exactly at block starts (block 128), the same 16 blocks late
+
+Most likely: software_scheduling (confidence high). 16 of 16 events sit at the start of the 128-sample block (offset 0, R=1.00, p=1.5e-11).
+
+software_scheduling  [high]
+  - 16 of 16 events sit at the start of the 128-sample block (offset 0, R=1.00, p=1.5e-11).
+  - 16 of 16 events are in or next to a late block, status-flag block or ADC-time gap (chance level 0.4%, p=1.2e-38).
+  next test: Record the same 60 s again with a larger block (256, then 512) in the same driver mode, and with the Windows power plan on High performance. If the clicks and late blocks disappear or drop sharply, scheduling is the cause.
+note: 16 late block(s), 0 with PortAudio status flags, 0 ADC-time gap(s) in 11250 blocks.
+Judged from numbers (samples, spectra, timing), not from listening. These are hypotheses, not proof.

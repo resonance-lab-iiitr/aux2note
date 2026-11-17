@@ -1,0 +1,48 @@
+{
+  "experiment": "E006",
+  "script_version": "1",
+  "label": "20261114_1533",
+  "started": "2026-11-14T15:35:57",
+  "rate": 48000,
+  "block": 256,
+  "latency": "low",
+  "bursts": 6,
+  "level": 0.35,
+  "runs_per_path": 5,
+  "paths": [
+    {
+      "name": "shared",
+      "api": "Windows WASAPI",
+      "in_id": 12,
+      "out_id": 10,
+      "in_name": "Line In (High Definition Audio Device)",
+      "out_name": "Speakers (High Definition Audio Device)",
+      "in_ch": 2,
+      "out_ch": 2,
+      "rate": 48000,
+      "block": 256,
+      "latency_mode": "low",
+      "exclusive": false
+    },
+    {
+      "name": "mme",
+      "api": "MME",
+      "in_id": 1,
+      "out_id": 4,
+      "in_name": "Line In (High Definition Audio ",
+      "out_name": "Speakers (High Definition Audio",
+      "in_ch": 2,
+      "out_ch": 2,
+      "rate": 48000,
+      "block": 256,
+      "latency_mode": "low",
+      "exclusive": false
+    }
+  ],
+  "one_process_per_run": true,
+  "level_check_peak_dbfs": -15.615620615966176,
+  "selftest_or_fake": false,
+  "script_sha256": "ce27c3e879b2d6e3a5c51870e15d95d56014098f36facf235b70e82643936e2d",
+  "latency_lab_sha256": "830dd2204c95f2a5807185ef3d622513f510a1771ca619d1da6fddddb294bc88",
+  "latency_core_sha256": "967794f2b4a43adad006fb566fcc0726cba2860c199af2330e05bfc5ff3684a1"
+}

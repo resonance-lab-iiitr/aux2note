@@ -1,0 +1,7 @@
+scenario,api,mode,rate,block,seconds,status,clicks_per_min,dropouts,clipping,xruns,cb_ms_p99,verdict,folder
+S1,Windows WASAPI,exclusive,48000,128,20,open_failed,,,,,,"No audio mode could be opened. Last error: PortAudioError: Error opening Stream: Invalid sample rate [PaErrorCode -9997]. Close other programs that use the sound card (browsers, Teams, music players),",
+S1,Windows WASAPI,exclusive,48000,256,20,open_failed,,,,,,"No audio mode could be opened. Last error: PortAudioError: Error opening Stream: Invalid sample rate [PaErrorCode -9997]. Close other programs that use the sound card (browsers, Teams, music players),",
+S1,Windows WASAPI,shared,48000,128,20,open_failed,,,,,,"No audio mode could be opened. Last error: PortAudioError: Error opening Stream: Invalid sample rate [PaErrorCode -9997]. Close other programs that use the sound card (browsers, Teams, music players),",
+S1,Windows WASAPI,shared,48000,256,20,open_failed,,,,,,"No audio mode could be opened. Last error: PortAudioError: Error opening Stream: Invalid sample rate [PaErrorCode -9997]. Close other programs that use the sound card (browsers, Teams, music players),",
+S1,MME,shared,48000,128,20,ok,24.489796,4,0,0,0.132,hardware_or_driver_input (medium),S1_mme_48000_128
+S1,MME,shared,48000,256,20,ok,24.489796,1,0,0,0.111,hardware_or_driver_input (high),S1_mme_48000_256

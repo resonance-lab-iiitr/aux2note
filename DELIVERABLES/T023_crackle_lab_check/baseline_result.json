@@ -1,0 +1,47 @@
+{
+ "note": "software-only baseline: 3 tracks, every effect on, master FX on, rendered with render_mix",
+ "baseline_effect_tails_kept_alive": {
+  "left": {
+   "clicks": 0,
+   "dropouts": 0,
+   "clip_runs": 0
+  },
+  "right": {
+   "clicks": 0,
+   "dropouts": 0,
+   "clip_runs": 0
+  }
+ },
+ "finding_clip_ends_in_exact_silence": {
+  "left": {
+   "clicks": 7,
+   "dropouts": 0,
+   "clip_runs": 0
+  },
+  "right": {
+   "clicks": 7,
+   "dropouts": 0,
+   "clip_runs": 0
+  }
+ },
+ "sample_clicks_at_block_starts": {
+  "counts": {
+   "clicks": 14,
+   "clicks_per_min": 168.0,
+   "dropouts": 0,
+   "clip_runs": 0,
+   "events_total": 14
+  },
+  "top": "software_scheduling"
+ },
+ "sample_dc_and_hum": {
+  "counts": {
+   "clicks": 0,
+   "clicks_per_min": 0.0,
+   "dropouts": 0,
+   "clip_runs": 0,
+   "events_total": 0
+  },
+  "top": "electrical"
+ }
+}

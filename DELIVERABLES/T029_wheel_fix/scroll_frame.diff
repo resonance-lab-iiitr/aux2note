@@ -1,0 +1,28 @@
+--- /tmp/sf_old.py	2026-11-12 09:30:26.572732131 +0000
++++ CODE/scroll_frame.py	2026-11-12 09:29:08.901572416 +0000
+@@ -54,11 +54,20 @@
+ 
+ 
+ def _pointer_widget(widget, event):
+-    try:
+-        w = widget.winfo_containing(widget.winfo_pointerx(), widget.winfo_pointery())
+-    except (tk.TclError, KeyError):
+-        w = None
+-    return w if w is not None else getattr(event, "widget", None)
++    """Widget under the mouse pointer. Tk gives `event.widget` as a plain str when it
++    has no Python object for the widget (e.g. a drop-down list), so fall back to the
++    Tk root for the lookup (T029)."""
++    host = widget if hasattr(widget, "winfo_containing") else getattr(tk, "_default_root", None)
++    w = None
++    if host is not None:
++        try:
++            w = host.winfo_containing(host.winfo_pointerx(), host.winfo_pointery())
++        except (tk.TclError, KeyError, AttributeError):
++            w = None
++    if w is not None:
++        return w
++    ew = getattr(event, "widget", None)
++    return None if isinstance(ew, str) else ew
+ 
+ 
+ def _on_global_wheel(event):

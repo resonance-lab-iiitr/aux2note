@@ -1,0 +1,390 @@
+{
+ "version": 1,
+ "tool": "crackle_report",
+ "input": {
+  "name": "S3_wasapi-excl_48000_128",
+  "kind": "folder",
+  "sr": 48000,
+  "channels": 1,
+  "channel": 0,
+  "n_samples": 960000,
+  "duration_s": 20.0,
+  "block_size": 128,
+  "has_blocks": true,
+  "has_meta": true,
+  "ms_frame_samples": 48
+ },
+ "meta": {
+  "format": "live-looper-capture-1",
+  "created_unix": 1794473739.236153,
+  "sample_rate": 48000,
+  "block_size": 128,
+  "channels_in": 1,
+  "channels_out": 2,
+  "capture_output": true,
+  "frames": 960000,
+  "seconds": 20.0,
+  "blocks": 7500,
+  "full": false,
+  "status_blocks": 0,
+  "raw_note": "raw.wav is the exact sound card input before CLEAN INPUT and effects.",
+  "status_bits": {
+   "1": "input underflow",
+   "2": "input overflow",
+   "4": "output underflow",
+   "8": "output overflow"
+  },
+  "scenario": "S3",
+  "scenario_title": "tone loopback",
+  "effects_off": true,
+  "monitoring_off": true,
+  "silent_input": false,
+  "engine_mode": "WASAPI EXCLUSIVE 48000 Hz / 128",
+  "api": "Windows WASAPI",
+  "matrix": true,
+  "source": "raw"
+ },
+ "verdict": {
+  "top": "hardware_or_driver_input",
+  "confidence": "medium",
+  "hypotheses": [
+   {
+    "name": "hardware_or_driver_input",
+    "confidence": "medium",
+    "score": 3,
+    "evidence": [
+     "2932 click(s), 8796.0 per minute, at random positions inside the block (no fixed offset).",
+     "The capture was made with nothing playing / effects and monitoring off, so the clicks were not produced by the program's own sound.",
+     "The clicks are present in the raw sound-card capture, before any DSP."
+    ],
+    "next_test": "Record 60 s of the RAW input with effects and monitoring off and nothing playing, then repeat with another USB port / cable and in another driver (WASAPI exclusive, ASIO). Clicks at the same rate in every engine mode point at the interface or its driver."
+   }
+  ],
+  "notes": [
+   "0 late block(s), 0 with PortAudio status flags, 5 ADC-time gap(s) in 7500 blocks."
+  ],
+  "summary": "Most likely: hardware_or_driver_input (confidence medium). 2932 click(s), 8796.0 per minute, at random positions inside the block (no fixed offset).",
+  "disclaimer": "Judged from numbers (samples, spectra, timing), not from listening. These are hypotheses, not proof."
+ },
+ "counts": {
+  "clicks": 2932,
+  "clicks_per_min": 8796.0,
+  "dropouts": 0,
+  "clip_runs": 0,
+  "events_total": 2932
+ },
+ "dc_noise": {
+  "dc": 6e-06,
+  "dc_dbfs": -103.874212,
+  "rms_dbfs": -20.97645,
+  "peak_dbfs": -16.211677,
+  "noise_floor_dbfs": -21.114204,
+  "digital_silence_fraction": 0.0,
+  "frames_used": 100,
+  "quiet_parts": false
+ },
+ "hum": {
+  "peaks": [],
+  "mains_hz": null,
+  "n_distinct": 0,
+  "strongest_dbfs": null
+ },
+ "clipping": {
+  "n_samples": 0,
+  "fraction": 0.0,
+  "peak": 0.154674,
+  "n_runs": 0,
+  "max_run": 0
+ },
+ "alignment": {
+  "n": 2932,
+  "block_size": 128,
+  "R": 0.070597,
+  "p_value": 0.0,
+  "preferred_offset": 105.60206,
+  "fraction_within_tol": 0.122783,
+  "tol": 4,
+  "clustered": false,
+  "at_block_start": false
+ },
+ "blocks": {
+  "n_blocks": 7500,
+  "n_late": 0,
+  "n_status": 0,
+  "n_gap": 5,
+  "n_events": 2932,
+  "near_late": 0,
+  "near_status": 0,
+  "near_gap": 0,
+  "near_any": 0,
+  "fraction_near_any": 0.0,
+  "chance_fraction": 0.002,
+  "p_value": 1.0,
+  "linked": false
+ },
+ "compare": null,
+ "worst_events": [
+  {
+   "type": "click",
+   "start_sample": 920523,
+   "t_ms": 19177.5625,
+   "amplitude": 0.230357,
+   "width_samples": 14,
+   "hf_db": -37.426025,
+   "block_index": 7191,
+   "offset_in_block": 75,
+   "nearest_engine_event_ms": 1110.896,
+   "confidence": "high"
+  },
+  {
+   "type": "click",
+   "start_sample": 414653,
+   "t_ms": 8638.604167,
+   "amplitude": 0.115832,
+   "width_samples": 14,
+   "hf_db": -39.666065,
+   "block_index": 3239,
+   "offset_in_block": 61,
+   "nearest_engine_event_ms": 345.396,
+   "confidence": "high"
+  },
+  {
+   "type": "click",
+   "start_sample": 692285,
+   "t_ms": 14422.604167,
+   "amplitude": 0.14192,
+   "width_samples": 14,
+   "hf_db": -42.315228,
+   "block_index": 5408,
+   "offset_in_block": 61,
+   "nearest_engine_event_ms": 340.062,
+   "confidence": "high"
+  },
+  {
+   "type": "click",
+   "start_sample": 413789,
+   "t_ms": 8620.604167,
+   "amplitude": 0.115827,
+   "width_samples": 14,
+   "hf_db": -39.665914,
+   "block_index": 3232,
+   "offset_in_block": 93,
+   "nearest_engine_event_ms": 363.396,
+   "confidence": "high"
+  },
+  {
+   "type": "click",
+   "start_sample": 450653,
+   "t_ms": 9388.604167,
+   "amplitude": 0.141928,
+   "width_samples": 14,
+   "hf_db": -42.307468,
+   "block_index": 3520,
+   "offset_in_block": 93,
+   "nearest_engine_event_ms": 404.604,
+   "confidence": "high"
+  },
+  {
+   "type": "click",
+   "start_sample": 430925,
+   "t_ms": 8977.604167,
+   "amplitude": 0.141928,
+   "width_samples": 14,
+   "hf_db": -42.311099,
+   "block_index": 3366,
+   "offset_in_block": 77,
+   "nearest_engine_event_ms": 6.396,
+   "confidence": "high"
+  },
+  {
+   "type": "click",
+   "start_sample": 798701,
+   "t_ms": 16639.604167,
+   "amplitude": 0.162275,
+   "width_samples": 15,
+   "hf_db": -37.089783,
+   "block_index": 6239,
+   "offset_in_block": 109,
+   "nearest_engine_event_ms": 1427.062,
+   "confidence": "high"
+  },
+  {
+   "type": "click",
+   "start_sample": 836717,
+   "t_ms": 17431.604167,
+   "amplitude": 0.141922,
+   "width_samples": 14,
+   "hf_db": -42.30879,
+   "block_index": 6536,
+   "offset_in_block": 109,
+   "nearest_engine_event_ms": 635.062,
+   "confidence": "high"
+  },
+  {
+   "type": "click",
+   "start_sample": 461741,
+   "t_ms": 9619.604167,
+   "amplitude": 0.141887,
+   "width_samples": 14,
+   "hf_db": -42.314806,
+   "block_index": 3607,
+   "offset_in_block": 45,
+   "nearest_engine_event_ms": 635.604,
+   "confidence": "high"
+  },
+  {
+   "type": "click",
+   "start_sample": 412637,
+   "t_ms": 8596.604167,
+   "amplitude": 0.119514,
+   "width_samples": 14,
+   "hf_db": -39.665616,
+   "block_index": 3223,
+   "offset_in_block": 93,
+   "nearest_engine_event_ms": 387.396,
+   "confidence": "high"
+  },
+  {
+   "type": "click",
+   "start_sample": 83016,
+   "t_ms": 1729.5,
+   "amplitude": 0.159286,
+   "width_samples": 15,
+   "hf_db": -39.77258,
+   "block_index": 648,
+   "offset_in_block": 72,
+   "nearest_engine_event_ms": 462.833,
+   "confidence": "high"
+  },
+  {
+   "type": "click",
+   "start_sample": 376779,
+   "t_ms": 7849.5625,
+   "amplitude": 0.232316,
+   "width_samples": 14,
+   "hf_db": -42.386746,
+   "block_index": 2943,
+   "offset_in_block": 75,
+   "nearest_engine_event_ms": 1134.438,
+   "confidence": "high"
+  },
+  {
+   "type": "click",
+   "start_sample": 609197,
+   "t_ms": 12691.604167,
+   "amplitude": 0.152811,
+   "width_samples": 15,
+   "hf_db": -42.377093,
+   "block_index": 4759,
+   "offset_in_block": 45,
+   "nearest_engine_event_ms": 2071.062,
+   "confidence": "high"
+  },
+  {
+   "type": "click",
+   "start_sample": 561245,
+   "t_ms": 11692.604167,
+   "amplitude": 0.141897,
+   "width_samples": 14,
+   "hf_db": -42.314557,
+   "block_index": 4384,
+   "offset_in_block": 93,
+   "nearest_engine_event_ms": 2708.604,
+   "confidence": "high"
+  },
+  {
+   "type": "click",
+   "start_sample": 919373,
+   "t_ms": 19153.604167,
+   "amplitude": 0.115834,
+   "width_samples": 14,
+   "hf_db": -39.667741,
+   "block_index": 7182,
+   "offset_in_block": 77,
+   "nearest_engine_event_ms": 1086.938,
+   "confidence": "high"
+  },
+  {
+   "type": "click",
+   "start_sample": 729005,
+   "t_ms": 15187.604167,
+   "amplitude": 0.162288,
+   "width_samples": 15,
+   "hf_db": -37.088528,
+   "block_index": 5695,
+   "offset_in_block": 45,
+   "nearest_engine_event_ms": 424.938,
+   "confidence": "high"
+  },
+  {
+   "type": "click",
+   "start_sample": 666509,
+   "t_ms": 13885.604167,
+   "amplitude": 0.152704,
+   "width_samples": 15,
+   "hf_db": -42.383797,
+   "block_index": 5207,
+   "offset_in_block": 13,
+   "nearest_engine_event_ms": 877.062,
+   "confidence": "high"
+  },
+  {
+   "type": "click",
+   "start_sample": 776093,
+   "t_ms": 16168.604167,
+   "amplitude": 0.162266,
+   "width_samples": 15,
+   "hf_db": -37.088343,
+   "block_index": 6063,
+   "offset_in_block": 29,
+   "nearest_engine_event_ms": 1405.938,
+   "confidence": "high"
+  },
+  {
+   "type": "click",
+   "start_sample": 450509,
+   "t_ms": 9385.604167,
+   "amplitude": 0.126553,
+   "width_samples": 15,
+   "hf_db": -39.737647,
+   "block_index": 3519,
+   "offset_in_block": 77,
+   "nearest_engine_event_ms": 401.604,
+   "confidence": "high"
+  },
+  {
+   "type": "click",
+   "start_sample": 491405,
+   "t_ms": 10237.604167,
+   "amplitude": 0.152747,
+   "width_samples": 15,
+   "hf_db": -42.382089,
+   "block_index": 3839,
+   "offset_in_block": 13,
+   "nearest_engine_event_ms": 1253.604,
+   "confidence": "high"
+  }
+ ],
+ "band_edges_hz": [
+  0.0,
+  500.0,
+  1000.0,
+  2000.0,
+  4000.0,
+  8000.0,
+  12000.0,
+  16000.0,
+  null
+ ],
+ "pack": {
+  "max_mb": 20.0,
+  "ms_every": 1,
+  "ms_rows": 20000,
+  "excerpts_kept": 10,
+  "png": "skipped",
+  "over_limit": false
+ },
+ "notes": [
+  "Pictures: skipped (--no-png)."
+ ]
+}

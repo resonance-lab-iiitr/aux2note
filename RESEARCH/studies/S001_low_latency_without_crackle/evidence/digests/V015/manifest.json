@@ -1,0 +1,211 @@
+{
+  "schema": 1,
+  "experiment": "E006",
+  "run": "20261114_1533",
+  "created": "2026-11-14T15:38:31",
+  "metrics": {
+    "shared_runs": 5,
+    "shared_runs_all_bursts": 5,
+    "shared_runs_status_ok": 5,
+    "shared_median_of_run_medians_ms": 40.786,
+    "shared_run_median_min_ms": 40.744,
+    "shared_run_median_max_ms": 40.932,
+    "shared_run_median_spread_ms": 0.188,
+    "shared_max_within_run_range_ms": 0.0,
+    "shared_xruns_total": 0,
+    "shared_peak_dbfs_min": -15.62,
+    "shared_peak_dbfs_max": -15.61,
+    "shared_unplugged_detected": 0,
+    "shared_unplugged_status": "FAILED",
+    "mme_runs": 5,
+    "mme_runs_all_bursts": 5,
+    "mme_runs_status_ok": 5,
+    "mme_median_of_run_medians_ms": 127.473,
+    "mme_run_median_min_ms": 127.286,
+    "mme_run_median_max_ms": 127.619,
+    "mme_run_median_spread_ms": 0.333,
+    "mme_max_within_run_range_ms": 0.0,
+    "mme_xruns_total": 0,
+    "mme_peak_dbfs_min": -15.61,
+    "mme_peak_dbfs_max": -15.61,
+    "mme_unplugged_detected": 0,
+    "mme_unplugged_status": "FAILED",
+    "n_runs_per_path_requested": 5
+  },
+  "env": {
+    "captured": "2026-11-14T15:38:31",
+    "os": "Windows-10-10.0.19041-SP0",
+    "machine": "AMD64",
+    "python": "3.10.0",
+    "cpu_count": 4,
+    "packages": {
+      "numpy": "1.26.4",
+      "scipy": "1.14.1",
+      "soundfile": "0.13.1",
+      "sounddevice": "0.5.1",
+      "matplotlib": "3.10.0"
+    },
+    "power_plan": "Power Scheme GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c  (High performance)",
+    "portaudio": "PortAudio V19.7.0-devel, revision unknown",
+    "host_apis": [
+      "MME",
+      "Windows DirectSound",
+      "Windows WASAPI",
+      "Windows WDM-KS"
+    ],
+    "devices": [
+      {
+        "id": 0,
+        "name": " - Input",
+        "hostapi": 0,
+        "in": 2,
+        "out": 0,
+        "default_rate": 44100.0
+      },
+      {
+        "id": 1,
+        "name": "Line In (High Definition Audio ",
+        "hostapi": 0,
+        "in": 2,
+        "out": 0,
+        "default_rate": 44100.0
+      },
+      {
+        "id": 2,
+        "name": "Microphone (ZQ-1080RL HD Camera",
+        "hostapi": 0,
+        "in": 2,
+        "out": 0,
+        "default_rate": 44100.0
+      },
+      {
+        "id": 3,
+        "name": " - Output",
+        "hostapi": 0,
+        "in": 0,
+        "out": 2,
+        "default_rate": 44100.0
+      },
+      {
+        "id": 4,
+        "name": "Speakers (High Definition Audio",
+        "hostapi": 0,
+        "in": 0,
+        "out": 2,
+        "default_rate": 44100.0
+      },
+      {
+        "id": 5,
+        "name": "Primary Sound Capture Driver",
+        "hostapi": 1,
+        "in": 2,
+        "out": 0,
+        "default_rate": 44100.0
+      },
+      {
+        "id": 6,
+        "name": "Line In (High Definition Audio Device)",
+        "hostapi": 1,
+        "in": 2,
+        "out": 0,
+        "default_rate": 44100.0
+      },
+      {
+        "id": 7,
+        "name": "Microphone (ZQ-1080RL HD Camera)",
+        "hostapi": 1,
+        "in": 2,
+        "out": 0,
+        "default_rate": 44100.0
+      },
+      {
+        "id": 8,
+        "name": "Primary Sound Driver",
+        "hostapi": 1,
+        "in": 0,
+        "out": 2,
+        "default_rate": 44100.0
+      },
+      {
+        "id": 9,
+        "name": "Speakers (High Definition Audio Device)",
+        "hostapi": 1,
+        "in": 0,
+        "out": 2,
+        "default_rate": 44100.0
+      },
+      {
+        "id": 10,
+        "name": "Speakers (High Definition Audio Device)",
+        "hostapi": 2,
+        "in": 0,
+        "out": 2,
+        "default_rate": 48000.0
+      },
+      {
+        "id": 11,
+        "name": "Microphone (ZQ-1080RL HD Camera)",
+        "hostapi": 2,
+        "in": 2,
+        "out": 0,
+        "default_rate": 16000.0
+      },
+      {
+        "id": 12,
+        "name": "Line In (High Definition Audio Device)",
+        "hostapi": 2,
+        "in": 2,
+        "out": 0,
+        "default_rate": 48000.0
+      },
+      {
+        "id": 13,
+        "name": "Microphone (ZQ-1080RL HD Camera)",
+        "hostapi": 3,
+        "in": 2,
+        "out": 0,
+        "default_rate": 16000.0
+      },
+      {
+        "id": 14,
+        "name": "Speakers (HD Audio Speaker)",
+        "hostapi": 3,
+        "in": 0,
+        "out": 2,
+        "default_rate": 44100.0
+      },
+      {
+        "id": 15,
+        "name": "Microphone (HD Audio Mixed capture)",
+        "hostapi": 3,
+        "in": 2,
+        "out": 0,
+        "default_rate": 44100.0
+      }
+    ]
+  },
+  "files": [
+    {
+      "name": "runs.csv",
+      "role": "data",
+      "size": 2660,
+      "sha256": "2d925aa59465cf8a2c8fc4b96251016ec91346c3a5c1b32df2683b5027a253cc",
+      "included": true
+    },
+    {
+      "name": "settings.json",
+      "role": "data",
+      "size": 1353,
+      "sha256": "120fd57d91298ac7642f48f7e7be6daeebbd795b5689623ab7ebf34321b85469",
+      "included": true
+    },
+    {
+      "name": "preview.txt",
+      "role": "data",
+      "size": 755,
+      "sha256": "f0fbb1469be98eef03afd2fc92d42bf3dd4db909d86809a30ecc674c70edd14f",
+      "included": true
+    }
+  ],
+  "notes_file": "notes.txt"
+}

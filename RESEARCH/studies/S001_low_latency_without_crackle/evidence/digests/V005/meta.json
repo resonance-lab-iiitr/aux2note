@@ -1,0 +1,29 @@
+{
+  "format": "live-looper-capture-1",
+  "created_unix": 1794473844.764881,
+  "sample_rate": 48000,
+  "block_size": 256,
+  "channels_in": 1,
+  "channels_out": 2,
+  "capture_output": true,
+  "frames": 962560,
+  "seconds": 20.053333,
+  "blocks": 3760,
+  "full": false,
+  "status_blocks": 0,
+  "raw_note": "raw.wav is the exact sound card input before CLEAN INPUT and effects.",
+  "status_bits": {
+    "1": "input underflow",
+    "2": "input overflow",
+    "4": "output underflow",
+    "8": "output overflow"
+  },
+  "scenario": "S3",
+  "scenario_title": "tone loopback",
+  "effects_off": true,
+  "monitoring_off": true,
+  "silent_input": false,
+  "engine_mode": "SHARED 48000 Hz / 256",
+  "api": "MME",
+  "matrix": true
+}

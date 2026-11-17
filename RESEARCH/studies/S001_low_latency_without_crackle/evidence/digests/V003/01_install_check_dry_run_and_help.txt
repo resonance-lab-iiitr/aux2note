@@ -1,0 +1,30 @@
+(pasted by the user, Windows 10 version 10.0.19041.1, folder D:\PROJECT_v032\PROJECT\CODE)
+
+D:\PROJECT_v032\PROJECT\CODE>run_crackle_matrix.bat --dry-run
+Crackle matrix: same captures in every driver, mode, rate and block size.
+Crackle matrix: 16 configurations x 5 scenarios x 20 s = 80 runs, about 31 min 05 s.
+S1  silence
+S2  muted line-in
+S3  tone loopback
+S4  live source
+S5  tone, input ignored
+   wasapi-excl    exclusive 44100 Hz  block  64   wasapi-excl_44100_64
+   wasapi-excl    exclusive 44100 Hz  block 128   wasapi-excl_44100_128
+   wasapi-excl    exclusive 44100 Hz  block 256   wasapi-excl_44100_256
+   wasapi-excl    exclusive 44100 Hz  block 512   wasapi-excl_44100_512
+   wasapi-excl    exclusive 48000 Hz  block  64   wasapi-excl_48000_64
+   wasapi-excl    exclusive 48000 Hz  block 128   wasapi-excl_48000_128
+   wasapi-excl    exclusive 48000 Hz  block 256   wasapi-excl_48000_256
+   wasapi-excl    exclusive 48000 Hz  block 512   wasapi-excl_48000_512
+   wasapi-shared  shared    44100 Hz  block 256   wasapi-shared_44100_256
+   wasapi-shared  shared    48000 Hz  block 256   wasapi-shared_48000_256
+   mme            shared    44100 Hz  block 256   mme_44100_256
+   mme            shared    48000 Hz  block 256   mme_48000_256
+   directsound    shared    44100 Hz  block 256   ds_44100_256
+   directsound    shared    48000 Hz  block 256   ds_48000_256
+   wdmks          shared    44100 Hz  block 256   wdmks_44100_256
+   wdmks          shared    48000 Hz  block 256   wdmks_48000_256
+Dry run: nothing was opened.
+
+D:\PROJECT_v032\PROJECT\CODE>run_crackle_matrix.bat --help
+(usage text: options --seconds --scenarios --out --rates --blocks --apis --quick --yes --dry-run; printed normally)

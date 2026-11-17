@@ -1,0 +1,180 @@
+{
+ "version": 1,
+ "tool": "crackle_report",
+ "input": {
+  "name": "S3_mme_48000_128",
+  "kind": "folder",
+  "sr": 48000,
+  "channels": 1,
+  "channel": 0,
+  "n_samples": 962560,
+  "duration_s": 20.053333,
+  "block_size": 128,
+  "has_blocks": true,
+  "has_meta": true,
+  "ms_frame_samples": 48
+ },
+ "meta": {
+  "format": "live-looper-capture-1",
+  "created_unix": 1794473823.652492,
+  "sample_rate": 48000,
+  "block_size": 128,
+  "channels_in": 1,
+  "channels_out": 2,
+  "capture_output": true,
+  "frames": 962560,
+  "seconds": 20.053333,
+  "blocks": 7520,
+  "full": false,
+  "status_blocks": 0,
+  "raw_note": "raw.wav is the exact sound card input before CLEAN INPUT and effects.",
+  "status_bits": {
+   "1": "input underflow",
+   "2": "input overflow",
+   "4": "output underflow",
+   "8": "output overflow"
+  },
+  "scenario": "S3",
+  "scenario_title": "tone loopback",
+  "effects_off": true,
+  "monitoring_off": true,
+  "silent_input": false,
+  "engine_mode": "SHARED 48000 Hz / 128",
+  "api": "MME",
+  "matrix": true,
+  "source": "raw"
+ },
+ "verdict": {
+  "top": "electrical",
+  "confidence": "medium",
+  "hypotheses": [
+   {
+    "name": "electrical",
+    "confidence": "medium",
+    "score": 3,
+    "evidence": [
+     "50 Hz hum with 3 distinct harmonic(s), strongest -88.9 dBFS."
+    ],
+    "next_test": "Run the interface from a different USB port or a powered hub, unplug other devices (laptop charger, monitors), use balanced cables, and record 30 s of silence again. Note whether the hum level or the DC offset changes."
+   }
+  ],
+  "notes": [],
+  "summary": "Most likely: electrical (confidence medium). 50 Hz hum with 3 distinct harmonic(s), strongest -88.9 dBFS.",
+  "disclaimer": "Judged from numbers (samples, spectra, timing), not from listening. These are hypotheses, not proof."
+ },
+ "counts": {
+  "clicks": 1,
+  "clicks_per_min": 2.992021,
+  "dropouts": 0,
+  "clip_runs": 0,
+  "events_total": 1
+ },
+ "dc_noise": {
+  "dc": -2e-06,
+  "dc_dbfs": -113.449968,
+  "rms_dbfs": -20.960641,
+  "peak_dbfs": -17.881318,
+  "noise_floor_dbfs": -21.435522,
+  "digital_silence_fraction": 0.0,
+  "frames_used": 101,
+  "quiet_parts": false
+ },
+ "hum": {
+  "peaks": [
+   {
+    "freq": 50.0,
+    "base": 50,
+    "harmonic": 1,
+    "level_dbfs": -99.467942,
+    "prominence_db": 17.489847
+   },
+   {
+    "freq": 150.0,
+    "base": 50,
+    "harmonic": 3,
+    "level_dbfs": -88.864907,
+    "prominence_db": 28.990049
+   },
+   {
+    "freq": 249.5,
+    "base": 50,
+    "harmonic": 5,
+    "level_dbfs": -95.248986,
+    "prominence_db": 22.518439
+   }
+  ],
+  "mains_hz": 50,
+  "n_distinct": 3,
+  "strongest_dbfs": -88.864907
+ },
+ "clipping": {
+  "n_samples": 0,
+  "fraction": 0.0,
+  "peak": 0.127625,
+  "n_runs": 0,
+  "max_run": 0
+ },
+ "alignment": {
+  "n": 1,
+  "block_size": 128,
+  "R": 1.0,
+  "p_value": 1.0,
+  "preferred_offset": 117.0,
+  "fraction_within_tol": 1.0,
+  "tol": 4,
+  "clustered": false,
+  "at_block_start": false
+ },
+ "blocks": {
+  "n_blocks": 7520,
+  "n_late": 0,
+  "n_status": 0,
+  "n_gap": 0,
+  "n_events": 1,
+  "near_late": 0,
+  "near_status": 0,
+  "near_gap": 0,
+  "near_any": 0,
+  "fraction_near_any": 0.0,
+  "chance_fraction": 0.0,
+  "p_value": 1.0,
+  "linked": false
+ },
+ "compare": null,
+ "worst_events": [
+  {
+   "type": "click",
+   "start_sample": 10997,
+   "t_ms": 229.104167,
+   "amplitude": 0.025286,
+   "width_samples": 5,
+   "hf_db": -62.209224,
+   "block_index": 85,
+   "offset_in_block": 117,
+   "nearest_engine_event_ms": "",
+   "confidence": "high"
+  }
+ ],
+ "band_edges_hz": [
+  0.0,
+  500.0,
+  1000.0,
+  2000.0,
+  4000.0,
+  8000.0,
+  12000.0,
+  16000.0,
+  null
+ ],
+ "pack": {
+  "max_mb": 20.0,
+  "ms_every": 1,
+  "ms_rows": 20053,
+  "excerpts_kept": 1,
+  "png": "skipped",
+  "over_limit": false
+ },
+ "notes": [
+  "Pictures: skipped (--no-png)."
+ ]
+}
